@@ -1,0 +1,307 @@
+
+body {
+    /* background-color: #2c222d; */
+    /* background-image: url(world.png); */
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+}
+
+.menu {
+    padding: 10px;
+    text-align: center;
+    color: black;
+    /* background-color: #181b1f; */
+    border-radius: 15px;
+    width: 80%;
+    margin: auto;
+}
+
+#dashboard {
+    padding: 10px;
+    text-align: center;
+    color: black;
+    /* background-color: #181b1f; */
+    border-radius: 15px;
+    width: 40%;
+    margin: auto;
+}
+
+.header {
+    margin-top: 30px;
+    padding: 0px 0px;
+}
+
+.button {
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    background-color: #181b1f;
+    padding: 10px;
+    align-content: right;
+    font-size: 18px;
+}
+
+.button:hover, .button:focus, .button:active {
+    color: white !important;
+
+}
+
+#cancel-stream, #resume-stream, #pause-stream, #make-deposits, #create-stream {
+    padding: 3%;
+    text-align: left;
+    color: white;
+    background-color: #181b1f;
+    border-radius: 15px;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.inputs {
+    background-color: #222429;
+    padding: 20px;
+    text-align: left;
+    border-radius: 15px;
+    margin: 10px 0;
+}
+
+input {
+    float: right;
+    background-color: #222429;
+    text-align: right;
+    border: 0;
+}
+
+input:focus {
+    outline: none;
+}
+
+.submit {
+    margin: auto;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 30px;
+    width: 100%;
+}
+
+.header-button {
+    /* background-color: #181b1f; */
+    border: 0;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+a:hover, a:focus {
+    text-decoration: none;
+    color: white;
+    background-color: #222429;
+}
+
+.menu a.clicked {
+    text-decoration: none;
+    color: white;
+    background-color: #222429;
+}
+
+.current-rating ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.current-rating ul > li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.rating-stars ul {
+    list-style-type:none;
+    padding:0;
+    /* float: right; */
+    -webkit-moz-user-select:none;
+  }
+  .rating-stars ul > li.star {
+    display:inline-block;
+  }
+  
+  /* Idle State of the stars */
+  .rating-stars ul > li.star > i.fa {
+    font-size:2.5em; /* Change the size of the stars */
+    color:#ccc; /* Color on idle state */
+  }
+  
+  /* Hover state of the stars */
+  .rating-stars ul > li.star.hover > i.fa {
+    color:#FFCC36;
+  }
+  
+  /* Selected state of the stars */
+  .rating-stars ul > li.star.selected > i.fa {
+    color:#FF912C;
+  }
+  
+  .checked {
+    color: orange;
+  }
+  .freelancer {
+      padding: 10px 0px;
+      background-color: #222429;
+      margin: 30px;
+      border-radius: 15px;
+      color: white;
+  }
+
+  .freelancer-image {
+      max-width: 100%;
+      
+  }
+
+
+  @media screen and (max-width: 767px) {
+    body {
+        font-size: 12px !important;
+    }
+    .menu {
+        width: 70% !important;
+        margin: 0;
+        position: fixed !important;
+        bottom: 20px !important;
+    }
+    .header {
+        width: 90% !important;
+        margin: auto !important;
+    }
+    .header-button {
+        padding: 10px;
+
+        display: inline-block !important;
+    }
+    #create-escrow, #release-escrow, #refund-buyer {
+        padding: 3%;
+        text-align: left;
+        color: white;
+        background-color: #181b1f;
+        border-radius: 15px;
+        width: 100% !important;
+        margin: auto;
+    }
+    .button {
+        font-size: 12px !important;
+        float: right;
+        margin: 20px 0;
+    }
+    }
+
+    .table-wrapper{
+        margin: 10px 70px 70px;
+        box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.2 );
+    }
+    
+    .fl-table {
+        border-radius: 5px;
+        font-size: 12px;
+        font-weight: normal;
+        border: none;
+        border-collapse: collapse;
+        width: 100%;
+        max-width: 100%;
+        white-space: nowrap;
+        background-color: white;
+    }
+    
+    .fl-table td, .fl-table th {
+        text-align: center;
+        padding: 8px;
+    }
+    
+    .fl-table td {
+        border-right: 1px solid #f8f8f8;
+        font-size: 14px;
+    }
+    
+    .fl-table thead th {
+        color: #ffffff;
+        background: #4FC3A1;
+    }
+    
+    
+    .fl-table thead th:nth-child(odd) {
+        color: #ffffff;
+        background: #324960;
+    }
+    
+    .fl-table tr:nth-child(even) {
+        background: #F8F8F8;
+    }
+    
+    /* Responsive */
+    
+    @media (max-width: 767px) {
+        .fl-table {
+            display: block;
+            width: 100%;
+        }
+        .table-wrapper:before{
+            content: "Scroll horizontally >";
+            display: block;
+            text-align: right;
+            font-size: 11px;
+            color: white;
+            padding: 0 0 10px;
+        }
+        .fl-table thead, .fl-table tbody, .fl-table thead th {
+            display: block;
+        }
+        .fl-table thead th:last-child{
+            border-bottom: none;
+        }
+        .fl-table thead {
+            float: left;
+        }
+        .fl-table tbody {
+            width: auto;
+            position: relative;
+            overflow-x: auto;
+        }
+        .fl-table td, .fl-table th {
+            padding: 20px .625em .625em .625em;
+            height: 60px;
+            vertical-align: middle;
+            box-sizing: border-box;
+            overflow-x: hidden;
+            overflow-y: auto;
+            width: 120px;
+            font-size: 13px;
+            text-overflow: ellipsis;
+        }
+        .fl-table thead th {
+            text-align: left;
+            border-bottom: 1px solid #f7f7f9;
+        }
+        .fl-table tbody tr {
+            display: table-cell;
+        }
+        .fl-table tbody tr:nth-child(odd) {
+            background: none;
+        }
+        .fl-table tr:nth-child(even) {
+            background: transparent;
+        }
+        .fl-table tr td:nth-child(odd) {
+            background: #F8F8F8;
+            border-right: 1px solid #E6E4E4;
+        }
+        .fl-table tr td:nth-child(even) {
+            border-right: 1px solid #E6E4E4;
+        }
+        .fl-table tbody td {
+            display: block;
+            text-align: center;
+        }
+    }
+
+/*# sourceMappingURL=/style.690a7010.css.map */

@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Cryptocurrency Hire</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <!--<script src="//cdn.jsdelivr.net/npm/faunadb@latest/dist/faunadb-min.js"></script>-->
+        <link rel="stylesheet" href="/style.690a7010.css">
+        <script type="module" src="/app.c61986b1.js"></script>
+    <script src="/style.690a7010.js"></script></head>
+    <body>
+        <div class="container-fluid">
+            <div class="row header">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <div class="row menu">
+                        <div class="col-md-4">
+                            <a class="header-button" id="create-button" href="#freelancers">Find Freelancers</a>
+                        </div>
+                        <div class="col-md-4">
+                            <a class="header-button" id="release-button" href="#">Become a Freelancer</a>
+                        </div>
+                        <div class="col-md-4">
+                            <a class="header-button" id="refund-button" href="#dashboard">Dashboard</a>
+                        </div>
+                        
+                        <script>$(function () {
+  $('.menu a').bind('click', function () {
+    $('.menu a').removeClass('clicked');
+    $(this).addClass('clicked');
+  });
+});</script>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <button type="button" class="btn button" id="connect">Connect wallet</button>
+                    <span class="button" id="wallet-address"></span>
+                    <script>//console.log("sic")
+$('#wallet-address').hide();
+/**$('#connect').bind('click', () => {
+    console.log("na we dey")
+    const address = getWalletAddress();
+    //console.log(address)
+})**/</script>
+                </div>
+            </div>
+            <h3 class="title" style="text-align: center; font-weight: solid;">Dashboard</h3>
+            <div>
+                <div class="row menu" id="dashboard">
+                    <div class="col-md-3">
+                        <a class="header-button" id="refund-button" href="# ">All</a>
+                    </div>
+                    <div class="col-md-3">
+                        <a class="header-button" id="create-button" href="#">Active</a>
+                    </div>
+                    <div class="col-md-3">
+                        <a class="header-button" id="release-button" href="#">Paused</a>
+                    </div>
+                    <div class="col-md-3">
+                        <a class="header-button" id="refund-button" href="# ">Canceled</a>
+                    </div>
+                </div>
+                <div id="projectTable" class="table-wrapper">
+                    
+                </div>
+                <div class="row">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4">
+                        <button type="button" class="btn button" id="pauseSt">Pause Project</button>
+                        <button type="button" class="btn button" id="resumeSt">Resume Project</button>
+                        <button type="button" class="btn button" id="cancelSt">Cancel Project</button>
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+            </div>
+            <div class="row header" id="pauseStream">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <div class="" id="pause-stream">
+                        <p>Pause Stream
+                        <div class="inputs">
+                            <div style="">
+                                <span>PDA</span>
+                                <input id="pausePda" class="amount" inputmode="text" autocomplete="off" autocorrect="off" type="text" placeholder="123" minlength="1" spellcheck="false">
+                            </div>
+                        
+                        </div>
+                        <div class="">
+                            <button type="submit" class="submit" style="background-color: #2172e4;" id="pause">Pause</button>
+                            <button type="submit" class="submit" style="background-color: #2d2f36;" id="id">Enter the PDA</button>
+                            <script>function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
+$(document).ready(function () {
+  var _this = this;
+
+  $('#rating').hide();
+  $('#release').hide();
+  $('#order').click( /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
+    return regeneratorRuntime.wrap(function _callee$(_context) {
+      while (1) {
+        switch (_context.prev = _context.next) {
+          case 0:
+            $("#release").hide();
+            $('#id').show();
+            $('#rating').hide();
+
+          case 3:
+          case "end":
+            return _context.stop();
+        }
+      }
+    }, _callee);
+  })));
+  document.getElementById('star', /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee2() {
+    var a;
+    return regeneratorRuntime.wrap(function _callee2$(_context2) {
+      while (1) {
+        switch (_context2.prev = _context2.next) {
+          case 0:
+            _context2.next = 2;
+            return _this.dataset.value;
+
+          case 2:
+            a = _context2.sent;
+            console.log(a, "yeah");
+
+          case 4:
+          case "end":
+            return _context2.stop();
+        }
+      }
+    }, _callee2);
+  })));
+});</script>
+                        </div>
+                        
+                        </p></div>
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+            <div class="row header" id="resumeStream">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <div class="" id="resume-stream">
+                        <p>Resume Stream
+                        <div class="inputs">
+                            <div style="">
+                                <span>PDA</span>
+                                <input id="resumePda" class="amount" inputmode="text" autocomplete="off" autocorrect="off" type="text" placeholder="123" minlength="1" spellcheck="false">
+                            </div>
+                        
+                        </div>
+                        
+                        <div class="">
+                            <button type="submit" class="submit" style="background-color: #2172e4;" id="resume">Resume</button>
+                            <button type="submit" class="submit" style="background-color: #2d2f36;" id="id">Enter the PDA</button>
+                            <script>function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
+$(document).ready(function () {
+  var _this = this;
+
+  $('#rating').hide();
+  $('#release').hide();
+  $('#order').click( /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
+    return regeneratorRuntime.wrap(function _callee$(_context) {
+      while (1) {
+        switch (_context.prev = _context.next) {
+          case 0:
+            $("#release").hide();
+            $('#id').show();
+            $('#rating').hide();
+
+          case 3:
+          case "end":
+            return _context.stop();
+        }
+      }
+    }, _callee);
+  })));
+  document.getElementById('star', /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee2() {
+    var a;
+    return regeneratorRuntime.wrap(function _callee2$(_context2) {
+      while (1) {
+        switch (_context2.prev = _context2.next) {
+          case 0:
+            _context2.next = 2;
+            return _this.dataset.value;
+
+          case 2:
+            a = _context2.sent;
+            console.log(a, "yeah");
+
+          case 4:
+          case "end":
+            return _context2.stop();
+        }
+      }
+    }, _callee2);
+  })));
+});</script>
+                        </div>
+                    </p></div>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+            <div class="row header" id="cancelStream">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <div class="" id="cancel-stream">
+                        <p>Cancel Stream
+                        <div class="inputs">
+                            <div style="">
+                                <span>PDA</span>
+                                <input id="cancelPda" class="amount" inputmode="text" autocomplete="off" autocorrect="off" type="text" placeholder="123" minlength="1" spellcheck="false">
+                            </div>
+                        </div>
+                        <div class="inputs">
+                            <div class="rating-stars text-center">
+                                <ul id="stars">
+                                <li class="star" title="Poor" data-value="1">
+                                    <i class="fa fa-star fa-fw"></i>
+                                </li>
+                                <li class="star" title="Fair" data-value="2">
+                                    <i class="fa fa-star fa-fw"></i>
+                                </li>
+                                <li class="star" title="Good" data-value="3">
+                                    <i class="fa fa-star fa-fw"></i>
+                                </li>
+                                <li class="star" title="Excellent" data-value="4">
+                                    <i class="fa fa-star fa-fw"></i>
+                                </li>
+                                <li class="star" title="WOW!!!" data-value="5">
+                                    <i class="fa fa-star fa-fw"></i>
+                                </li>
+                                </ul>
+                                <script>$(document).ready(function () {
+  /* 1. Visualizing things on Hover - See next part for action on click */
+  $('#stars li').on('mouseover', function () {
+    var onStar = parseInt($(this).data('value'), 10); // The star currently mouse on
+
+    $("#cancel").hide();
+    $('#id').hide();
+    $('#rating').show(); // Now highlight all the stars that's not after the current hovered star
+
+    $(this).parent().children('li.star').each(function (e) {
+      if (e < onStar) {
+        $(this).addClass('hover');
+      } else {
+        $(this).removeClass('hover');
+      }
+    });
+  }).on('mouseout', function () {
+    $(this).parent().children('li.star').each(function (e) {
+      $(this).removeClass('hover');
+    });
+  });
+  var onStar = 0;
+  var orderId = "";
+  /* 2. Action to perform on click */
+
+  $('#stars li').on('click', function () {
+    onStar = parseInt($(this).data('value'), 10); // The star currently selected
+
+    var stars = $(this).parent().children('li.star');
+
+    for (i = 0; i < stars.length; i++) {
+      $(stars[i]).removeClass('selected');
+    }
+
+    for (i = 0; i < onStar; i++) {
+      $(stars[i]).addClass('selected');
+    }
+
+    if (orderId === "" || onStar === 0) {
+      $("#release").hide();
+    } else {
+      $("#release").show();
+      $('#id').hide();
+      $('#rating').hide();
+    }
+  });
+  $("#cancelPda").change(function () {
+    orderId = this.value.replace(/\s/g, "");
+
+    if (orderId === "" || onStar === 0) {
+      $("#cancel").hide();
+    } else {
+      $("#cancel").show();
+      $('#id').hide();
+      $('#rating').hide();
+    }
+  });
+});</script>
+                            </div>
+                        </div>
+                        <div class="">
+                            <button type="submit" class="submit" style="background-color: #2172e4;" id="cancel">Cancel</button>
+                            <button type="submit" class="submit" style="background-color: #2d2f36;" id="id">Enter the PDA</button>
+                            <button type="submit" class="submit" style="background-color: #2d2f36;" id="rating">Rate the service</button>
+                            <script>function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
+$(document).ready(function () {
+  var _this = this;
+
+  $('#cancel').hide();
+  $('#rating').hide();
+  $('#cancelPda').click( /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
+    return regeneratorRuntime.wrap(function _callee$(_context) {
+      while (1) {
+        switch (_context.prev = _context.next) {
+          case 0:
+            $("#cancel").hide();
+            $('#id').show();
+            $('#rating').hide();
+
+          case 3:
+          case "end":
+            return _context.stop();
+        }
+      }
+    }, _callee);
+  })));
+  document.getElementById('star', /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee2() {
+    var a;
+    return regeneratorRuntime.wrap(function _callee2$(_context2) {
+      while (1) {
+        switch (_context2.prev = _context2.next) {
+          case 0:
+            _context2.next = 2;
+            return _this.dataset.value;
+
+          case 2:
+            a = _context2.sent;
+            console.log(a, "yeah");
+
+          case 4:
+          case "end":
+            return _context2.stop();
+        }
+      }
+    }, _callee2);
+  })));
+});</script>
+                        </div>
+                        
+                        </p></div>
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+            
+            <script>$('#pauseStream').show();
+$('#resumeStream').hide();
+$('#cancelStream').hide();
+$('#pauseSt').click(function () {
+  $('#pauseStream').show();
+  $('#resumeStream').hide();
+  $('#cancelStream').hide();
+});
+$('#resumeSt').click(function () {
+  $('#pauseStream').hide();
+  $('#resumeStream').show();
+  $('#cancelStream').hide();
+});
+$('#cancelSt').click(function () {
+  $('#pauseStream').hide();
+  $('#resumeStream').hide();
+  $('#cancelStream').show();
+});</script>
+            <div class="col-md-6 bottom">
+                <p id="pmessage" style="text-align:center; color:green;"></p>
+                <p id="nmessage" style="text-align:center;color:red;"></p>
+            </div>
+            <h3 class="title" style="text-align: center; font-weight: solid;">Hire Freelancers</h3>
+            <div class="row freelancer" id="freelancers">
+                <div class="col-md-4">
+                    <img src="/rear-view-programmer-working-all-night-long.75927fe7.jpg" alt="freelancer" class="freelancer-image">
+                    <div class="freelancer-info" style="padding:10px;">
+                        <div class="row">
+                            <div class="col-md-10"><p>8SFyQC...fpLW</p></div>
+                            <div class="col-md-2" style="float:right;">
+                                <a href="#createStream" style="text-decoration: none; color:white;">
+                                    <button style="background-color:green; border-radius:5px; border:none;" id="hire" value="8SFyQCti4ea32tcsok7AvbC3PAHL11H5w7vdk2B7fpLW">Hire</button>
+                                </a>
+                            </div>
+                        </div>
+                        <p>I'll write smart contracts on Solana</p>
+                        <div class="">
+                            <div class="current-rating" style="font-size:1.5em">
+                                <ul id="">
+                                <li class="star" title="Poor" data-value="1">
+                                    <i class="fa fa-star fa-fw checked"></i>
+                                </li>
+                                <li class="star" title="Fair" data-value="2">
+                                    <i class="fa fa-star fa-fw checked"></i>
+                                </li>
+                                <li class="star" title="Good" data-value="3">
+                                    <i class="fa fa-star fa-fw checked"></i>
+                                </li>
+                                <li class="star" title="Excellent" data-value="4">
+                                    <i class="fa fa-star fa-fw checked"></i>
+                                </li>
+                                <li class="star" title="WOW!!!" data-value="5">
+                                    <i class="fa fa-star fa-fw"></i>
+                                </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img src="/coding-man.eb2b9767.jpg" alt="freelancer" class="freelancer-image">
+                    <div class="freelancer-info" style="padding:10px;">
+                        <div class="row">
+                            <div class="col-md-10"><p>9cwn5e3...hmN3J</p></div>
+                            <div class="col-md-2" style="float:right;">
+                                <a href="#createStream" style="text-decoration: none; color:white;">
+                                    <button style="background-color:green; border-radius:5px; border:none;">Hire</button>
+                                </a>
+                            </div>
+                        </div>
+                        <p>I'll create an NFT marketplace on Solana</p>
+                        <div class="">
+                            <div class="current-rating" style="font-size:1.5em">
+                                <ul id="">
+                                <li class="star" title="Poor" data-value="1">
+                                    <i class="fa fa-star fa-fw checked"></i>
+                                </li>
+                                <li class="star" title="Fair" data-value="2">
+                                    <i class="fa fa-star fa-fw checked"></i>
+                                </li>
+                                <li class="star" title="Good" data-value="3">
+                                    <i class="fa fa-star fa-fw checked"></i>
+                                </li>
+                                <li class="star" title="Excellent" data-value="4">
+                                    <i class="fa fa-star fa-fw checked"></i>
+                                </li>
+                                <li class="star" title="WOW!!!" data-value="5">
+                                    <i class="fa fa-star fa-fw checked"></i>
+                                </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img src="/rear-view-programmer-working-all-night-long.75927fe7.jpg" alt="freelancer" class="freelancer-image">
+                    <div class="freelancer-info" style="padding:10px;">
+                        <div class="row">
+                            <div class="col-md-10"><p>1SFyQC...fpLW</p></div>
+                            <div class="col-md-2" style="float:right;">
+                                <a href="#createStream" style="text-decoration: none; color:white;">
+                                    <button style="background-color:green; border-radius:5px; border:none;">Hire</button>
+                                </a>
+                            </div>
+                        </div>
+                        <p>I'll write smart contracts on Solana</p>
+                        <div class="">
+                            <div class="current-rating" style="font-size:1.5em">
+                                <ul id="">
+                                <li class="star" title="Poor" data-value="1">
+                                    <i class="fa fa-star fa-fw checked"></i>
+                                </li>
+                                <li class="star" title="Fair" data-value="2">
+                                    <i class="fa fa-star fa-fw checked"></i>
+                                </li>
+                                <li class="star" title="Good" data-value="3">
+                                    <i class="fa fa-star fa-fw checked"></i>
+                                </li>
+                                <li class="star" title="Excellent" data-value="4">
+                                    <i class="fa fa-star fa-fw"></i>
+                                </li>
+                                <li class="star" title="WOW!!!" data-value="5">
+                                    <i class="fa fa-star fa-fw"></i>
+                                </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3 class="title" style="text-align: center; font-weight: solid;">Make Deposit</h3>
+            <div class="row" id="makeDeposits">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <div class="" id="make-deposits">
+                        <div class="inputs">
+                            <div style="">
+                                <span>SOL</span>
+                                <input id="depositToken" class="texts" inputmode="decimal" autocomplete="off" autocorrect="off" type="text" pattern="^[0-9]*[.,]?[0-9]*$" placeholder="0.0" minlength="1" maxlength="79" spellcheck="false">
+                            </div>
+                        </div>
+                        <div class="">
+                            <button type="submit" class="submit" style="background-color: #2172e4;" id="deposit">Deposit</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+            <div class="row" id="createStream">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <div class="" id="create-stream">
+                        <p>Start Streaming Payment</p>
+                        <div class="inputs">
+                            <div style="">
+                                <span>SOL</span>
+                                <input id="token" class="texts" inputmode="decimal" autocomplete="off" autocorrect="off" type="text" pattern="^[0-9]*[.,]?[0-9]*$" placeholder="0.0" minlength="1" maxlength="79" spellcheck="false">
+                            </div>
+                        
+                        </div>
+                        <div class="inputs">
+                            <span>Address</span>
+                            <input id="recipient" class="texts" type="text" autocomplete="off" autocorrect="off" placeholder="0x..." spellcheck="false">
+                        </div>
+                        <div class="inputs">
+                            <span>Start Time</span>
+                            <input id="start" class="texts" type="datetime-local">
+                        </div>
+                        <div class="inputs">
+                            <span>End Time</span>
+                            <input id="end" class="texts" type="datetime-local">
+                        </div>
+                        <div class="">
+                            <button type="submit" class="submit" style="background-color: #2172e4;" id="create">Create</button>
+                            <button type="submit" class="submit" style="background-color: #2d2f36;" id="amount">Enter token amount</button>
+                            <button type="submit" class="submit" style="background-color: #2d2f36;" id="address">Enter recipient's address</button>
+                            <button type="submit" class="submit" style="background-color: #2d2f36;" id="startDate">Enter start date</button>
+                            <button type="submit" class="submit" style="background-color: #2d2f36;" id="endDate">Enter end date</button>
+                            <script>function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
+$(document).ready(function () {
+  $('#address').hide();
+  $('#create').hide();
+  $('#startDate').hide();
+  $('#endDate').hide();
+  $('#token').click( /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
+    return regeneratorRuntime.wrap(function _callee$(_context) {
+      while (1) {
+        switch (_context.prev = _context.next) {
+          case 0:
+            $("#create").hide();
+            $('#amount').show();
+            $('#address').hide();
+            $('#startDate').hide();
+            $('#endDate').hide();
+
+          case 5:
+          case "end":
+            return _context.stop();
+        }
+      }
+    }, _callee);
+  })));
+  $('#recipient').click( /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee2() {
+    return regeneratorRuntime.wrap(function _callee2$(_context2) {
+      while (1) {
+        switch (_context2.prev = _context2.next) {
+          case 0:
+            $("#create").hide();
+            $('#address').show();
+            $('#amount').hide();
+            $('#startDate').hide();
+            $('#endDate').hide();
+
+          case 5:
+          case "end":
+            return _context2.stop();
+        }
+      }
+    }, _callee2);
+  })));
+  $('#start').click( /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee3() {
+    return regeneratorRuntime.wrap(function _callee3$(_context3) {
+      while (1) {
+        switch (_context3.prev = _context3.next) {
+          case 0:
+            $("#create").hide();
+            $('#address').hide();
+            $('#amount').hide();
+            $('#startDate').show();
+            $('#endDate').hide();
+
+          case 5:
+          case "end":
+            return _context3.stop();
+        }
+      }
+    }, _callee3);
+  })));
+  $('#end').click( /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee4() {
+    return regeneratorRuntime.wrap(function _callee4$(_context4) {
+      while (1) {
+        switch (_context4.prev = _context4.next) {
+          case 0:
+            $("#create").hide();
+            $('#address').hide();
+            $('#amount').hide();
+            $('#startDate').hide();
+            $('#endDate').show();
+
+          case 5:
+          case "end":
+            return _context4.stop();
+        }
+      }
+    }, _callee4);
+  })));
+  $(".texts").change(function () {
+    if ($('#token').val().replace(/\s/g, "") === "" || $('#recipient').val().replace(/\s/g, "") === "" || $('#start').val().replace(/\s/g, "") === "" || $('#end').val().replace(/\s/g, "") === "") {
+      $("#create").hide();
+    } else {
+      $("#create").show();
+      $('#address').hide();
+      $('#amount').hide();
+      $('#startDate').hide();
+      $('#endDate').hide();
+    }
+  });
+});</script>
+                        </div>
+                        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+            
+            
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6 bottom">
+                    <p id="_pmessage" style="text-align:center; color:green;"></p>
+                    <p id="_nmessage" style="text-align:center;color:red;"></p>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+        
+    </body>
+</html>
