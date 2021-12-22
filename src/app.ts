@@ -11,10 +11,10 @@ import {
 import faunadb from 'faunadb';
 // import FAUNA_KEY from '../appKeys';
 import dotenv from 'dotenv';
-import { start } from "repl";
-const env = dotenv.config();
+dotenv.config();
+dotenv.config();
 
-const faunaKey = env.FAUNA_KEY;
+const faunaKey = process.env.FAUNA_KEY;
 
 var client = new faunadb.Client({
     secret: faunaKey

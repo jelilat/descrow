@@ -63124,8 +63124,9 @@ var faunadb_1 = __importDefault(require("faunadb")); // import FAUNA_KEY from '.
 
 var dotenv_1 = __importDefault(require("dotenv"));
 
-var env = dotenv_1.default.config();
-var faunaKey = env.FAUNA_KEY;
+dotenv_1.default.config();
+dotenv_1.default.config();
+var faunaKey = undefined;
 var client = new faunadb_1.default.Client({
   secret: faunaKey
 }); // //var faunadb = (window as any).faunadb;
