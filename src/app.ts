@@ -9,14 +9,15 @@ import {
   withdrawNativeTokenDeposit,
 } from "zebecprotocol-sdk";
 import faunadb from 'faunadb';
-import FAUNA_KEY from '../appKeys';
+// import FAUNA_KEY from '../appKeys';
+import dotenv from 'dotenv';
 import { start } from "repl";
-// const env = require('../.env') 
+const env = dotenv.config();
 
-// // const faunaKey = env.FAUNA_KEY;
+const faunaKey = env.FAUNA_KEY;
 
 var client = new faunadb.Client({
-    secret: FAUNA_KEY.FAUNA_KEY
+    secret: faunaKey
   })
 
 // //var faunadb = (window as any).faunadb;
